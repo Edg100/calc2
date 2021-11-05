@@ -1,21 +1,26 @@
-""" This is the increment function"""
+# This is the increment function
+
 class Calculator:
-    """ This is the Calculator class"""
+    # This is the Calculator class
 
     result = 0
+
     def get_result(self):
-        """ Get Result of Calculation"""
+        # Get Result of Calculation
         return self.result
 
-    def add_number(self, value_a):
-        """ adds number to result"""
-        self.result = self.result + value_a
+    def add_number(self, NumA, NumB):
+        # Add two numbers and store the result
+        self.result = NumA + NumB
         return self.result
-    def subtract_number(self, value_a):
-        """ subtract numbers from result"""
-        self.result = self.result - value_a
+
+    def subtract_number(self, NumA, NumB):
+        # Subtract two numbers and store the result
+        self.result = NumA - NumB
         return self.result
-    def multiply_numbers(self, value_a, value_b):
-        """ multiply two numbers and store the result"""
-        self.result = value_a * value_b
+
+    def multiply_numbers(self, NumA, NumB):
+        # Multiply two numbers and store the result
+        self.result = NumA * NumB
         return self.result
+
