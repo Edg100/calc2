@@ -8,11 +8,8 @@ def test_calculator_result():
 
 def test_calculator_add():
     """Testing the Add function of the calculator"""
-    """Arrange by instantiating the calc class"""
     calc = Calculator()
-    """Act by calling the method to be tested"""
-    result = calc.add_number(4,2)
-    """Assert that the results are correct"""
+    result = calc.add_numbers(4,2)
     assert result == 6
 
 def test_calculator_get_result():
@@ -23,7 +20,7 @@ def test_calculator_get_result():
 def test_calculator_subtract():
     """Testing the subtract method of the calculator"""
     calc = Calculator()
-    result= calc.subtract_number(4,7)
+    result= calc.subtract_numbers(4,7)
     assert result == -3
 
 def test_calculator_multiply():
