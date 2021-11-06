@@ -1,5 +1,23 @@
-# Calculator Project Setup
-[![Build Status](https://app.travis-ci.com/kaw393939/calc2.svg?branch=main)](https://app.travis-ci.com/kaw393939/calc2)
+# Calculator Project Setup Part 2
+
+## By Edgardo Guillen
+
+## Travis Badge
+
+[![Build Status](https://app.travis-ci.com/Edg100/calc2.svg?branch=master)](https://app.travis-ci.com/Edg100/calc2)
+
+## Repository In Travis
+
+
+
+## Pytest In The Terminal
+
+
+
+## PyLint Test In The terminal
+
+
+### Configurations And File Descriptions Used In The Calculator Part 2 Project
 
 Run Pip Install
 pip install -r requirements.txt
