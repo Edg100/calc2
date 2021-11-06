@@ -20,6 +20,7 @@
 
 ## History of Commits
 
+![Commit History](commit_history.jpg)
 
 ### Configurations And File Descriptions Used In The Calculator Part 2 Project
 
