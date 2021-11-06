@@ -8,13 +8,17 @@
 
 ## Repository In Travis
 
-
+![Travis](Travis.jpg)
 
 ## Pytest In The Terminal
 
-
+![Pytest](Pytest_Test.jpg)
 
 ## PyLint Test In The terminal
+
+![PyLint](PyLint_Test.jpg)
+
+## History of Commits
 
 
 ### Configurations And File Descriptions Used In The Calculator Part 2 Project
