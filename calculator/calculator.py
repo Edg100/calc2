@@ -9,7 +9,7 @@ class Calculator:
     history = []
     @staticmethod
     def get_result_of_first_calculation_added_to_history():
-        return Calculator.history[0].getResult()
+        return Calculator.history[0].get_result()
     @staticmethod
     def clear_history():
         Calculator.history.clear()
@@ -24,7 +24,7 @@ class Calculator:
     @staticmethod
     def get_result_of_last_calculation_added_to_history():
         # -1 gets the last item added to the list automaticly and you can expect it to have the get result method
-        return Calculator.history[-1].getResult()
+        return Calculator.history[-1].get_result()
     @staticmethod
     def add_number(num_a, num_b):
         """ adds number to result"""
