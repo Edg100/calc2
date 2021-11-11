@@ -1,56 +1,61 @@
 """ Incremental function"""
-#first import the addition namespace
+#Importing all calculations
+
 from calc.addition import Addition
 from calc.subtraction import Subtraction
 from calc.multiplication import Multiplication
+from calc.division import Division
+
 class Calculator:
-    """ This is the Calculator class"""
-    #this is the calculator static property
+    """ This is the Calculator class where cl_history is the clear history"""
+    #Calculator static property
     history = []
     @staticmethod
-    def get_result_of_first_calculation_added_to_history():
+    def get_first_cal_add_hist():
+        """This is to get the first added calculation history"""
         return Calculator.history[0].get_result()
     @staticmethod
     def cl_hist():
+        """This clears history of the calculator"""
         Calculator.history.clear()
         return True
     @staticmethod
     def history_count():
+        """This controls the history count"""
         return len(Calculator.history)
     @staticmethod
     def add_calculation_to_history(calculation):
+        """Add calaculation history to calculator"""
         Calculator.history.append(calculation)
         return True
     @staticmethod
-    def get_result_of_last_calculation_added_to_history():
-        # -1 gets the last item added to the list automatically
-        #  and you can expect it to have the get result method
+    def get_last_cal_add_hist():
+        """Get last added calculation history"""
         return Calculator.history[-1].get_result()
     @staticmethod
     def add_number(num_a, num_b):
-        """ adds number to result"""
-        #create an addition object using the
-        # factory we created on the calculation class
+        """Add numbers to result"""
+        #Addition object
         addition = Addition.create(num_a,num_b)
-        # addition = Addition(num_a,num_b) <-this is
-        #  not good but will work.  It will be repeated too much
         Calculator.add_calculation_to_history(addition)
-        return Calculator.get_result_of_last_calculation_added_to_history()
+        return Calculator.get_last_cal_add_hist()
     @staticmethod
-    #this is an example of a calling method
+    #Calling method
     def subtract_number(num_a, num_b):
-        """ subtract number from result"""
-        # create an subtraction object using the
-        #  factory we created on the calculation class
+        """Substract numbers from result"""
+        # Subtraction object
         subtraction = Subtraction.create(num_a, num_b)
-        # addition = Addition(num_a,num_b) <-this is
-        #  not good but will work.  It will be repeated too much
         Calculator.add_calculation_to_history(subtraction)
-        return Calculator.get_result_of_last_calculation_added_to_history()
+        return Calculator.get_last_cal_add_hist()
     @staticmethod
     def multiply_numbers(num_a, num_b):
-        """ multiply two numbers and store the result"""
-        #this is a shorthand way to create the
-        # multiplication object and added it the history in one line
-        Calculator.add_calculation_to_history(Multiplication.create(num_a,num_b))
-        return Calculator.get_result_of_last_calculation_added_to_history()
+        """Multiply two numbers and store the result"""
+        #Multiplication object
+        Calculator.add_calculation_to_history(Multiplication.create(num_a, num_b))
+        return Calculator.get_last_cal_add_hist()
+    @staticmethod
+    def divide_numbers(num_a, num_b):
+        """Divide two numbers and store the result"""
+        #Division object
+        Calculator.add_calculation_to_history(Division.create(num_a, num_b))
+        return Calculator.get_last_cal_add_hist()

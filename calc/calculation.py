@@ -1,13 +1,12 @@
-"""This is our calculation base class / Abstract Class"""
+"""Calculation base class or Abstract Class"""
 class Calculation:
-    """contstructor and it is the first function called
-     when an object of the class is instantiated"""
+    """This is called constructor"""
     def __init__(self,num_a, num_b):
-        """self references the instantiated object of the class
-        these are instance properties that are being sharred
+        """self  represents the object inside the class that are being shared
         with the child classes (addition, subtraction, etc...)"""
         self.num_a = num_a
         self.num_b = num_b
     @classmethod
     def create(cls, num_a, num_b):
-        return cls(num_a,num_b)
+        """This is to return the two values to calculation parent class"""
+        return cls(num_a, num_b)
