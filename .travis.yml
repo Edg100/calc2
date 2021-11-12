@@ -13,5 +13,5 @@ branches:
     - development
     - master
 
-aftersuccess:
--coveralls
+after_success:
+  - coveralls
