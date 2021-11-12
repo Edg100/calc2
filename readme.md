@@ -6,10 +6,6 @@
 
 [![Build Status](https://app.travis-ci.com/Edg100/calc2.svg?branch=calc_part2)](https://app.travis-ci.com/Edg100/calc2)
 
-## Coverage Badge
-
-[![Coverage Status](https://coveralls.io/repos/github/Edg100/calc2/badge.svg?branch=calc_part2)](https://coveralls.io/github/Edg100/calc2?branch=calc_part2)
-
 ## Added the Divsion method to the code
 
 ![division method](division_method.jpg)
