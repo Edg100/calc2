@@ -12,3 +12,4 @@ branches:
     - main
     - development
     - master
+    - calc_part2

@@ -21,7 +21,7 @@ class Calculator:
         return True
     @staticmethod
     def history_count():
-        """This controls the history count"""
+        """This controls the history count for the calculations"""
         return len(Calculator.history)
     @staticmethod
     def add_calculation_to_history(calculation):
