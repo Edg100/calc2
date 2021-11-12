@@ -6,6 +6,10 @@
 
 [![Build Status](https://app.travis-ci.com/Edg100/calc2.svg?branch=calc_part2)](https://app.travis-ci.com/Edg100/calc2)
 
+## Added the Divsion method to the code
+
+![division method](division_method.jpg)
+
 ## Repository In Travis
 
 ![Travis](Travis2.jpg)
