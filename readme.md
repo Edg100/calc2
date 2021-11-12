@@ -1,22 +1,26 @@
-# Calculator Project Setup Part 2
+# Improved Calculator With History Assigment
 
 ## By Edgardo Guillen
 
 ## Travis Badge
 
-[![Build Status](https://app.travis-ci.com/Edg100/calc2.svg?branch=master)](https://app.travis-ci.com/Edg100/calc2)
+[![Build Status](https://app.travis-ci.com/Edg100/calc2.svg?branch=calc_part2)](https://app.travis-ci.com/Edg100/calc2)
+
+## Added the Divsion method to the code
+
+![division method](division_method.jpg)
 
 ## Repository In Travis
 
-![Travis](Travis.jpg)
+![Travis](Travis2.jpg)
 
 ## Pytest In The Terminal
 
-![Pytest](Pytest_Test.jpg)
+![Pytest](Pytest_Test2.jpg)
 
 ## PyLint Test In The terminal
 
-![PyLint](PyLint_Test.jpg)
+![PyLint](PyLint_Test2.jpg)
 
 ## History of Commits
 
