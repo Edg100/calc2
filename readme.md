@@ -6,6 +6,10 @@
 
 [![Build Status](https://app.travis-ci.com/Edg100/calc2.svg?branch=master)](https://app.travis-ci.com/Edg100/calc2)
 
+## Coverage Badge
+
+[![Coverage Status](https://coveralls.io/repos/github/Edg100/calc2/badge.svg?branch=master)](https://coveralls.io/github/Edg100/calc2?branch=master)
+
 ## Repository In Travis
 
 ![Travis](Travis.jpg)
