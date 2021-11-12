@@ -12,3 +12,6 @@ branches:
     - main
     - development
     - master
+
+aftersuccess:
+-coveralls
