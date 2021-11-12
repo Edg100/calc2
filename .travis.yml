@@ -6,6 +6,7 @@ install:
 # command to run tests
 script:
   - pytest  --pylint --cov
+  - python -m pytest  --cov-report term --cov=app
 
 branches:
   only:
@@ -13,3 +14,6 @@ branches:
     - development
     - master
     - calc_part2
+
+after_success:
+  - codecov
