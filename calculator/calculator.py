@@ -25,7 +25,7 @@ class Calculator:
         return len(Calculator.history)
     @staticmethod
     def add_calculation_to_history(calculation):
-        """Add calaculation history to calculator"""
+        """Add calculation history to calculator"""
         Calculator.history.append(calculation)
         return True
     @staticmethod
@@ -42,7 +42,7 @@ class Calculator:
     @staticmethod
     #Calling method
     def subtract_number(num_a, num_b):
-        """Substract numbers from result"""
+        """Subtract numbers from result"""
         # Subtraction object
         subtraction = Subtraction.create(num_a, num_b)
         Calculator.add_calculation_to_history(subtraction)

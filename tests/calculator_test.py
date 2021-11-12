@@ -3,8 +3,9 @@
 import pytest
 
 from calculator.calculator import Calculator
-
 # We define a function that will run each time you pass it to a test which is called a fixture
+# pylint: disable=redefined-outer-name
+# pylint: disable=unused-argument
 
 @pytest.fixture
 def cl_hist():

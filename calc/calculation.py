@@ -1,5 +1,6 @@
 """Calculation base class or Abstract Class"""
 class Calculation:
+    # pylint: disable=too-few-public-methods
     """This is called constructor"""
     def __init__(self,num_a, num_b):
         """self  represents the object inside the class that are being shared
