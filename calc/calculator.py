@@ -1,38 +1,28 @@
-""" Incremental function"""
-#Importing all calculations
-from calc.calculations.addition import Addition
-from calc.calculations.subtraction import Subtraction
-from calc.calculations.multiplication import Multiplication
-from calc.calculations.division import Division
+""" This is the increment function"""
 from calc.history.calculations import Calculations
 
+#the calculator class just contains the methods to calculate
 class Calculator:
-    """ Calculator class for all math operations"""
+    """ This is the Calculator class"""
+    #the calculator class just calls methods on Calculations class
     @staticmethod
-    def add_number(*args):
-        """Add a list of numbers from result"""
-        # Addition object
-        calculation = Addition(args)
-        Calculations.add_calculation(calculation)
-        return calculation.get_result()
+    def get_last_result_value():
+        """ This is the gets the result of the calculation"""
+        # I made this method so that I don't have more than one action per function
+        return Calculations.get_last_calculation_result_value()
     @staticmethod
-    def subtract_number(*args):
-        """Subtract a list of numbers from result"""
-        # Subtraction object
-        calculation = Subtraction(args)
-        Calculations.add_calculation(calculation)
-        return calculation.get_result()
+    #tuple allows me to pass in as many values as a I want
+    def add_numbers(tuple_values: tuple):
+        """ adds list of numbers"""
+        Calculations.add_addition_calculation(tuple_values)
+        return True
     @staticmethod
-    def multiply_numbers(*args):
-        """Multiply numbers from result"""
-        #Multiplication object
-        calculation = Multiplication(args)
-        Calculations.add_calculation(calculation)
-        return calculation.get_result()
+    def subtract_numbers(tuple_values: tuple):
+        """ subtract a list of numbers from result"""
+        Calculations.add_subtraction_calculation(tuple_values)
+        return True
     @staticmethod
-    def divide_numbers(*args):
-        """Divide numbers from result"""
-        #Division object
-        calculation = Division(args)
-        Calculations.add_calculation(calculation)
-        return calculation.get_result()
+    def multiply_numbers(tuple_values: tuple):
+        """ multiplication number from result"""
+        Calculations.add_multiplication_calculation(tuple_values)
+        return True
