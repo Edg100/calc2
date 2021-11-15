@@ -4,9 +4,10 @@ from calc.calculations.calculation import Calculation
 
 #This is the way for Division class to extend with the Calculation class
 class Division(Calculation):
-    """The division class has one method to get the result of the the calculation A and B come from
-    the calculation parent class"""
+    """The division class from the calculation parent class"""
     def get_result(self):
-        """Here the use of self is to reference the
-        data in the object instance called encapsulation."""
-        return self.num_a / self.num_b
+        """This is to get the division results"""
+        result = 1.0
+        for value in self.values:
+            result = result / value
+        return result

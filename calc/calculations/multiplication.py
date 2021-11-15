@@ -1,12 +1,14 @@
-"""Multiplication Calculation from values A and value B in the calculation class"""
+"""Multiplication Class for two numbers"""
 
 from calc.calculations.calculation import Calculation
 
 #This is the way for Multiplication class to extend with the Calculation class
-class Multiplication(Calculation):
-    """The addition class has one method to get the result of the the calculation
-     A and B come from the calculation parent class"""
-    def get_result(self):
-        """self is to reference the data in the object instance called encapsulation."""
 
-        return self.num_a * self.num_b
+class Multiplication(Calculation):
+    """The multiplication class from the calculation parent class"""
+    def get_result(self):
+        """This is to get the multiplication results"""
+        result = 1.0
+        for value in self.values:
+            result = result * value
+        return result

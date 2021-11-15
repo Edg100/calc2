@@ -1,12 +1,14 @@
-"""Addition Calculation from values A and value B in the calculation class"""
+"""Addition Class for two numbers"""
 
 from calc.calculations.calculation import Calculation
 
-#This is the way for Addition class to extend with the Calculation class
 class Addition(Calculation):
-    """The addition class has one method to get the result of the the calculation A and B come from
-    the calculation parent class"""
+    """The addition class from the calculation parent class"""
     def get_result(self):
-        """Here the use of self is to reference the
-        data in the object instance called encapsulation."""
-        return self.num_a + self.num_b
+        """This is to get the addition results"""
+# Here sum_values is for the summation of two or group of values
+        sum_values = 0.0
+        for value in self.values:
+            sum_values = value + sum_values
+        return sum_values
+

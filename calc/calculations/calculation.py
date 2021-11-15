@@ -1,13 +1,15 @@
-"""Calculation base class or Abstract Class"""
+"""Calculation Class or Abstract Class"""
 class Calculation:
     # pylint: disable=too-few-public-methods
-    """This is called constructor"""
-    def __init__(self,num_a, num_b):
-        """self  represents the object inside the class that are being shared
-        with the child classes (addition, subtraction, etc...)"""
-        self.num_a = num_a
-        self.num_b = num_b
-    @classmethod
-    def create(cls, num_a, num_b):
-        """This is to return the two values to calculation parent class"""
-        return cls(num_a, num_b)
+
+#self  represents the object inside the class that are being shared.
+    def __init__(self,values: tuple):
+        """This is called constructor method"""
+        self.values = Calculation.conv_args_list_flt(values)
+    @staticmethod
+    def conv_args_list_flt(values):
+        """ standardize values to list of floats"""
+        list_values_float = []
+        for item in values:
+            list_values_float.append(float(item))
+        return list_values_float

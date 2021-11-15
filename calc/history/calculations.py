@@ -1,7 +1,9 @@
-"""Calculation history Class"""
+"""Calculation History Class"""
+
 class Calculations:
     history = []
     # pylint: disable=too-few-public-methods
+
     @staticmethod
     def clear_history():
         Calculations.history.clear()
