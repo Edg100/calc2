@@ -1,6 +1,6 @@
 """Subtraction Calculation from values A and value B in the calculation class"""
 
-from calc.calculation import Calculation
+from calc.calculations.calculation import Calculation
 
 #This is the way for Substration class to extend with the Calculation class
 class Subtraction(Calculation):
