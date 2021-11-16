@@ -1,11 +1,11 @@
 """Test for the division object"""
 from calc.calculations.division import Division
 
-def test_calculation_subtraction():
-        """testing static method for multiplication"""
+def test_calculation_division():
+        """testing static method for division"""
         #Arrange
-        my_numbers = (12.0,2.0)
+        my_numbers = (1.0,4.0)
         # Act
         division = Division(my_numbers)
         #Assert
-        assert division.get_result() == 6.0
+        assert division.get_result() == 0.25

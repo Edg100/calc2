@@ -10,9 +10,5 @@ class Division(Calculation):
         """This is to get the division results"""
         result = 1.0
         for value in self.values:
-            result = result / value
+            result = result/value
         return result
-
-    @classmethod
-    def create(cls, values):
-        pass
