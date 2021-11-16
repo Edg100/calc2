@@ -12,3 +12,7 @@ class Division(Calculation):
         for value in self.values:
             result = result / value
         return result
+
+    @classmethod
+    def create(cls, values):
+        pass

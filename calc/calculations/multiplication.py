@@ -1,13 +1,10 @@
-"""Multiplication Class for two numbers"""
-
+"""Multiplication Class"""
 from calc.calculations.calculation import Calculation
 
-#This is the way for Multiplication class to extend with the Calculation class
-
 class Multiplication(Calculation):
-    """The multiplication class from the calculation parent class"""
+    """subtraction calculation object"""
     def get_result(self):
-        """This is to get the multiplication results"""
+        """get the multiplication results"""
         result = 1.0
         for value in self.values:
             result = result * value

@@ -1,14 +1,11 @@
-"""Addition Class for two numbers"""
-
+"""Addition Class"""
 from calc.calculations.calculation import Calculation
 
 class Addition(Calculation):
-    """The addition class from the calculation parent class"""
+    """ calculation addition class"""
     def get_result(self):
-        """This is to get the addition results"""
-# Here sum_values is for the summation of two or group of values
-        sum_values = 0.0
+        """get the addition results"""
+        sum_of_values = 0.0
         for value in self.values:
-            sum_values = value + sum_values
-        return sum_values
-
+            sum_of_values = value + sum_of_values
+        return sum_of_values

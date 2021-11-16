@@ -1,18 +1,14 @@
-"""Subtraction Class for two numbers"""
-
+"""Subtraction Class"""
 import pprint
 
 from calc.calculations.calculation import Calculation
 
-#This is the way for Subtraction class to extend with the Calculation class
 class Subtraction(Calculation):
-    """The subtraction class from the calculation parent class"""
+    """subtraction calculation object"""
     def get_result(self):
-        """This is to get the subtraction results"""
-# Here diff_value is for the different of two values
-        diff_values = 0.0
+        """get the subtraction results"""
+        difference_of_values = 0.0
         for value in self.values:
-            diff_values = diff_values - value
+            difference_of_values =   difference_of_values - value
             pprint.pprint(value)
-        return diff_values
-
+        return difference_of_values
