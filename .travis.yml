@@ -13,6 +13,7 @@ branches:
     - development
     - master
     - calc_part2
+    - calc_part5
 
 after_success:
   - coveralls
