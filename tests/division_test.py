@@ -2,7 +2,7 @@
 from calc.calculations.division import Division
 
 def test_calculation_division():
-    """testing static method for division"""
+    """Testing static method for division"""
     #Arrange
     my_numbers = (1.0,4.0)
     # Act
